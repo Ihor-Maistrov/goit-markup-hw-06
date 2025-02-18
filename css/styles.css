@@ -189,7 +189,6 @@ address {
     border-radius: 100%;
     border: 1px solid #e7e9fc ;
     background-color: transparent;
-    display: block;
     margin-left: auto;
     margin-bottom: 24px;
 }
@@ -214,14 +213,20 @@ address {
 
 .header-underlining {}
 
+.mob-address-wrapper {
+    /* display: flex;
+    flex-direction: column;
+gap: 48px; */
+}
+
 .mob-address {
+    margin-bottom: 48px;
 }
 
 .mob-address-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
 }
 
 .mob-address-item {}
@@ -380,12 +385,17 @@ width: 100%;
 }
 
 .features-subtitle {
-    color: #2e2f42;
-    font-weight: 500;
+    /* font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.02em; */
         margin-bottom: 8px;
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #2e2f42;
 }
 
 .features-item-text {
@@ -595,7 +605,6 @@ font-weight: 400;
     display: flex;
     flex-direction: column;
     /* align-items: baseline; */
-    align-items: center;
     gap: 72px;
 }
 
@@ -604,7 +613,6 @@ font-weight: 400;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
 /* margin-right: 120px; */
 }
 
@@ -669,14 +677,18 @@ font-weight: 400;
 }
 
 .footer-form {
-    /* display: flex; */
-    gap: 24px;
+    /* display: flex;
+    gap: 24px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-email {
     border: 1px solid #fff;
         border-radius: 4px;
-        width: 264px;
+        /* width: 264px; */
+        width: 288px;
         height: 40px;
         background: transparent;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -685,7 +697,6 @@ font-weight: 400;
         line-height: 2;
         letter-spacing: 0.04em;
         color: #FFFFFF;
-        margin-bottom: 16px;
 }
 
 .footer-email::placeholder {
@@ -1022,12 +1033,16 @@ transform: translate(0, -50%);
             border: none;
             display: none;
         }
+        
+        .header-nav {
+            gap: 120px;
+        }
 
         .header-list {
             display: flex;
             gap: 40px;
-            margin-left: 120px;
-            margin-right: 120px;
+            /* margin-left: 120px;
+            margin-right: 120px; */
         }
 
         .address-list {
@@ -1070,6 +1085,10 @@ transform: translate(0, -50%);
             margin-bottom: 36px;
         }
 
+        .features-subtitle {
+            text-align: start;
+        }
+
         .team .container {
             max-width: 552px;
             padding-left: 0;
@@ -1108,19 +1127,24 @@ transform: translate(0, -50%);
      width: calc((100% - 24px) / 2);
  }
 
+ .footer {
+    padding-left: 108px;
+    padding-right: 164px;
+ }
+
  .footer-container {
      flex-direction: row;
      /* align-items: baseline; */
-     align-items: center;
      flex-wrap: wrap;
      gap: 72px 24px;
-    margin-left: 108px;
-    margin-right: 164px;
+     padding-left: 0;
+     padding-right: 0;
+    /* margin-left: 108px;
+    margin-right: 164px; */
  }
 
  .footer-text-container {
      align-items: start;
-     gap: 16px;
  }
  .footer-logo {
     text-align: left;
@@ -1135,7 +1159,12 @@ transform: translate(0, -50%);
  }
 
  .footer-form {
-     display: flex;
+    flex-direction: row;
+    gap: 24px;
+ }
+
+ .footer-email {
+     width: 264px;
  }
 
  .modal {
@@ -1158,8 +1187,8 @@ transform: translate(0, -50%);
             padding-bottom: 24px;
         }
 
-        .header-logo {
-            margin-right: 76px;
+        .header-nav {
+            gap: 76px;
         }
 
         .header-list {
@@ -1232,6 +1261,14 @@ transform: translate(0, -50%);
             padding-top: 120px;
             padding-bottom: 120px;
         }
+
+        .features-subtitle {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+        }
+
         .team {
             padding-top: 120px;
             padding-bottom: 120px;
