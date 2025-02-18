@@ -787,8 +787,10 @@ background: #404bbf;
 .modal {
     padding-top: 72px;
     padding-bottom: 24px;
-    padding-right: 24px;
-    padding-left: 24px;
+    /* padding-right: 24px;
+    padding-left: 24px; */
+    padding-left: 16px;
+    padding-right: 16px;
     /* width: 408px;
     min-height: 584px; */
     width: 288px;
@@ -1170,6 +1172,8 @@ transform: translate(0, -50%);
  .modal {
      width: 408px;
     height: 584px;
+    padding-right: 24px;
+    padding-left: 24px;
     }
     
 } 
